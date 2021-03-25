@@ -14,9 +14,11 @@ sudo chmod 4755 <my script>
 Dans le fichier /etc/passwd changez le shell de l'utilisateur <username>
 
 
-Add these two lines at the end of your sudoers file. You can use nano to edit the sudoers file:(A faire pour tous les scripts)
-	Cmnd_Alias        CMDS = /path/to/your/script
-	<username>  ALL=NOPASSWD: CMDS
+Add these two lines at the end of your sudoers file. You can use nano to edit the sudoers file (A faire pour tous les scripts):
+
+Cmnd_Alias        CMDS = /path/to/your/script
+
+<username>  ALL=NOPASSWD: CMDS
 
 Important: Toujours vérifier que le nom d'utilisateur n'est pas vide sinon le service ssh arrêtera de fonctionner
 

@@ -5,9 +5,9 @@ import socket
 
 from ssh2.session import Session
 
-host = '192.168.6.155'
-username = 'gankpo'
-password = 'gankpo'
+host = 'remote FTP server IP'
+username = 'root'
+password = 'password'
 port = 22
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
